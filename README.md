@@ -2,8 +2,6 @@
 
 An AI copilot for cold-chain logistics: a Python / Streamlit AI FDE project combining historical fleet telemetry, operating procedures, and optional current weather. The default demo runs without cloud credentials. Conversational mode uses a bounded LangGraph tool-calling loop with OpenAI, Ollama, or DeepSeek.
 
-[View the handwritten project notes](docs/NOTES.md) · [Download the original PDF](notes.pdf?raw=true)
-
 ## Run in VS Code
 
 Install Python 3.12. Open this project folder in VS Code and use its integrated terminal.
