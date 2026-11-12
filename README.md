@@ -1,5 +1,9 @@
 # FrostRoute AI
 
+**[Open the live FrostRoute AI demo](https://frostroute-ai-ai-fde-project.streamlit.app/)**
+
+The hosted demo uses historical sample data and local SOP retrieval. Conversational AI requires separate provider configuration.
+
 An AI copilot for cold-chain logistics: a Python / Streamlit AI FDE project combining historical fleet telemetry, operating procedures, and optional current weather. The default demo runs without cloud credentials. Conversational mode uses a bounded LangGraph tool-calling loop with OpenAI, Ollama, or DeepSeek.
 
 ## Run in VS Code
