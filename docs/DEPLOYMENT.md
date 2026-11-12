@@ -24,7 +24,7 @@ Audit files under `.runtime/` and conversation memory are local to the running i
 
 ## Troubleshooting
 
-- Dependency error: confirm Python 3.12 and inspect the build logs.
+- Dependency error: confirm Python 3.12 and inspect the build logs. Keep `packages.txt` limited to Debian package names, one per line: Community Cloud may pass comments to apt as package names.
 - File not found: confirm repository `main` and entrypoint `src/ui.py`.
 - Database/API error in the demo: check for old environment or secrets settings; the intended demo uses `DATA_BACKEND=demo`, `RAG_BACKEND=local`, `AGENT_LLM=DEMO`.
 - Restricted app access: sign in as the account owner and review sharing settings.
