@@ -28,6 +28,10 @@ If PowerShell blocks activation, run `.venv\Scripts\python.exe -m pip install -r
 
 Use **Evidence explorer** to load the historical fleet sample, search the SOP with local BM25, and check an explicitly confirmed fresh-perishable temperature. No Pinecone, embeddings, database server, or LLM is needed for these workflows. The checker provides recommendations; it does not perform dispatch actions.
 
+## Deploy the demo
+
+Follow [the Streamlit Community Cloud deployment guide](docs/DEPLOYMENT.md). Use repository `Abhinav072004/FrostRoute-AI`, branch `main`, entrypoint `src/ui.py`, and Python 3.12. The demo needs no secrets. Hosting account sign-in is required; source upload alone does not deploy an app.
+
 ## Enable conversational AI
 
 Edit `.env` and restart Streamlit:
