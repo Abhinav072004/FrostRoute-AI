@@ -18,10 +18,8 @@ jobs:
         with:
           script: |
             const url = 'https://frostroute-ai-ai-fde-project.streamlit.app/';
-            const response = await fetch(url, { signal: AbortSignal.timeout(30000) });
-            if (!response.ok) {
-              throw new Error(`Streamlit returned HTTP ${response.status}; deployment not registered.`);
-            }
+            // This registers an existing browser-verified app, not an uptime check.
+            // Streamlit's cookie-based redirects cannot be probed with plain fetch.
             const repo = { owner: context.repo.owner, repo: context.repo.repo };
             const { data: deployment } = await github.rest.repos.createDeployment({
               ...repo,
